@@ -1,0 +1,75 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h2{
+    background: linear-gradient(to right, #fdc830, #f37335);
+    background-clip: text;
+    color: transparent;  
+    text-align: center;
+}
+.logo-pulse{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    animation: pulse 2s infinite;
+    margin: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #fcb21a;
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px #ffc95c6b;
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #c99429b0;
+    }
+}
+p{
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fcb21a;
+    font-size: 1rem;
+}
+li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fcb21a;
+    border-radius: 100%;
+}
+
+li a:hover{
+    background-color: #fcb21a;
+    color: black;
+}
+
