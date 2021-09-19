@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Raydesite",
+    siteUrl: `https://raydesite.com`,
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
